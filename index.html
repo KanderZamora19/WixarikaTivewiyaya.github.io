@@ -1,314 +1,192 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ventas Wixarikas</title>
+<head>
+	<meta charset="UTF-8">
+	<title>HOME</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="js/js.js">
+    <link href="CSS/estilos.css" rel="stylesheet" type="text/css">
+    <!---------------------------------------------->
 
-  </head>
-  <body>
-    <header>
-        <div class="container mb-3">
-            <nav class="navbar navbar-expand-lg bg-light fixed-top">
-                <div class="container">
-                  <a class="navbar-brand" href="#">Ventas Wixarikas</a>
-                  <div class="row">
-                    <div class="col align-self-end">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                          <ul class="navbar-nav">
-                            <div class="input-group">
-                              <input type="search" class="form-control rounded" placeholder="Que Estas Buscando" aria-label="Search" aria-describedby="search-addon" />
-                              <button type="button" class="btn btn-outline-primary">Buscar</button>
-                            </div>
-<!--menus de barras principales-->
-                            <li class="nav-item mx-3">
-                              <a class="nav-link" aria-current="page" href="#">Vender</a>
-                            </li>
-                            
-                            <li class="nav-item mx-3">
-                              <a class="nav-link" href="#">Favoritos</a>
-                            </li>
+	
+</head>
+<body>
 
-                              <li class="nav-item dropdown mx-3">
-                              <a class="nav-link dropdown-toggle" href="#" role="button" 
-                              data-bs-toggle="dropdown" aria-expanded="false">
-                              Categorias
-                              </a>
-                           
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Pulceras</a></li>
-                                <li><a class="dropdown-item" href="#">Collares</a></li>
-                                <li><a class="dropdown-item" href="#">Vestidos</a></li>
-                                <li><a class="dropdown-item" href="#">Blusas</a></li>
-                                <li><a class="dropdown-item" href="#">Camisas</a></li> 
-                                <li><a class="dropdown-item" href="#">Sombreros</a></li>           
-                                <li><a class="dropdown-item" href="#">Calzado</a></li>                                     
-                            </ul>
-                            </li>
+	<nav class="navbar navbar-expand-lg " style="background-color: #66EC3C;">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#"> Wixarika Tivewiyaya</a>
+		  <nav class="navbar bg-light"></nav>
+<!--Buscador De Productos btn menu-->
+		 <input id="buscar" class="buscar" placeholder="Que es lo que buscas">
 
-                            <li class="nav-item mx-3">
-                              <a
-                                button type="button" class="btn btn-outline-success" data-bs-toggle="modal" 
-                                data-bs-target="#exampleModal">Crear Cuenta</button>
-                            </a>
+		 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
 
-                            </li>
-                          </ul>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="carousel">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-inner shadow rounded mt-5">
-                              <div class="carousel-item active" data-bs-interval="3500">
-                                <img src="img/NOV1.jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="3500">
-                                <img src="img/NOV2.jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="3500">
-                                <img src="img/NOV3.jpg" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-          
-            <div class="container text-left">
-                <div class="row my-5">
-                    <div class="col d-none d-md-block">
-                        <h1>Ofertas De Hoy</h1>
-                    </div>
-                    <div class="col d-block d-md-none">
-                        <h3>h3. Bootstrap heading</h3>
-                    </div>
-                </div>
+         <div id="panel" class="panel"></div>
+    <!---------------------------------------------->
 
-          
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                 
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="img/NOV1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">producto</h5>
-                          <p class="card-text">text</p>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-muted"><a class="nav-link" href="#">Conoce más</a></small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="img/NOV2.jpg"card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">producto</h5>
-                          <p class="card-text">text</p>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-muted"><a class="nav-link" href="#">Conoce más</a></small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="img/NOV3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">producto</h5>
-                          <p class="card-text">text</p>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-muted"><a class="nav-link" href="#">Conoce más</a></small>
-                        </div>
-                      </div>
-                    </div>
-                </div>
 
-    
+
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+			  <li class="nav-item">
+				<button type="button" class="btn btn-light">Vender</button>
+			</li>
+			  <li class="nav-item">
+				<button type="button" class="btn btn-light">Favoritos</button>
+			</li>
+			  <li class="nav-item">
+				<button type="button" class="btn btn-light">Menu</button>
+			</li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Categorias
+				</a>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Pulceras</a></li>
+				  <li><a class="dropdown-item" href="#">Collares</a></li>
+				  <li><a class="dropdown-item" href="#">Vestimentas</a></li>
+				  <li><a class="dropdown-item" href="#">Sombreros</a></li>
+				  <li><a class="dropdown-item" href="#">Calzado</a></li>
+				  <li><a class="dropdown-item" href="#">Morrales</a></li>
 
 
 
 
 
-                <div class="row my-5">
-                    <div class="col d-none d-md-block">
-                        <h1>Mas Productos</h1>
-                    </div>
-                    <div class="col d-block d-md-none">
-                        <h3>h3. Bootstrap heading</h3>
-                    </div>
-                </div>
- <!-- tarjetas de productos-->
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="img/NOV1.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">producto</h5>
-                        <p class="card-text">text</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"><a class="nav-link" href="#">Conoce más</a></small>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="img/NOV2.jpg"card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">producto</h5>
-                        <p class="card-text">text</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"><a class="nav-link" href="#">Conoce más</a></small>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="img/NOV3.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">producto</h5>
-                        <p class="card-text">text</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted"><a class="nav-link" href="#">Conoce más</a></small>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-           
-        </section>
-    </main>
-    <footer>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col my-5">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Acerca De</button>
-            
-                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Acerca De</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body small">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">Distribucion de productos</div>
-                                <div class="col">Copyright 2022</div>
-                                <div class="col">Candelario Eleuterio Zamora</div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modal -->
+				</ul>
+			  </li>
+			
+			  <button type="button" class="btn btn-success">login</button>
+		
+			  
 
 
 
 
-    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Crear Cuenta</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-               
-            
-<div class="form">
-<form action="guardar.php" method="POST">
-  <p>Registrate tus datos en los campos</p>
-  <br>
-  <input type="text" name="nombre" placeholder="escriba" required>
-  <label for="nombre" >su nombre</label>
-  <br>
-  <input type="email" name="correo" placeholder="kanderzamora@gmail.com" required>
-  <label for="correo" >correo</label>
-  <br>
-  <input type="text" name="telefono" placeholder="311323445" required>
-  <label for="telefono" >telefono</label>
-  <br>
-  <input type="number" name="edad" placeholder="edad" required>
-  <label for="edad" >edad</label>
-  <br>
-  <input type="text" name="sexo" placeholder="hmbre o mujer" required>
-  <label for="sexo" >sexo</label>
- <br>
-  <input type="submit" value="Enviar">
-</form>
+
+
+
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+
+
+	  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="imagenes/1.jpg" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="imagenes/2.jpg" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="imagenes/3.jpg" class="d-block w-100" alt="...">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+
+	<br>
+	  <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+		Ofertas
+	  </div>
+	  <div class="row row-cols-2 row-cols-md-4 g-4">
+		<div class="col">
+			<div class="card h-50">
+				<img src="imagenes/2.jpeg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Producto</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <button type="button" class="btn btn-warning">Comprar</button>				</div>
+			  </div>
+
+		</div>
+		<div class="col">
+			<div class="card h-100" >
+				<img src="imagenes/2.jpeg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Producto</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <button type="button" class="btn btn-warning">Comprar</button>				</div>
+			  </div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<img src="imagenes/2.jpeg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Producto</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <button type="button" class="btn btn-warning">Comprar</button>				</div>
+			  </div>
+	</div>
+
+	<div class="col">
+		<div class="card h-100">
+			<img src="imagenes/2.jpeg" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title">Producto</h5>
+			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			  <button type="button" class="btn btn-warning">Comprar</button>				</div>
+
+		  </div>
+
 </div>
-           
-
-
-
-
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Understood</button>
-            </div>
-
-        </div>
-        </div>
-    </div>
 
 
 
 
 
+	  
+
+</body>
+
+<footer>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col my-5">
+				<button class="btn btn-primary footer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Acerca De</button>
+		
+				<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasBottomLabel">Acerca De</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body small">
+					<div class="container">
+						<div class="row">
+							<div class="col">Distribucion de productos</div>
+							<div class="col">Copyright 2022</div>
+							<div class="col">Candelario Eleuterio Zamora</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 
-
-
-    <script>
-        const myModal = document.getElementById('myModal')
-        const myInput = document.getElementById('myInput')
-
-        myModal.addEventListener('shown.bs.modal', () => {
-        myInput.focus()
-        })
-    </script>
-
-    <script>
-        const myOffcanvas = document.getElementById('myOffcanvas')
-        myOffcanvas.addEventListener('hidden.bs.offcanvas', event => {
-        // do something...
-        })
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
 </html>

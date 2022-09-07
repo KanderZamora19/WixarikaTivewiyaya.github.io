@@ -1,0 +1,60 @@
+
+.offcanvas{
+    background: #9bc94c;
+    text-align: center;
+    
+}
+
+.btn-primary {
+   
+    margin-left: 580px;
+    width: 100px;
+
+   
+}
+
+.d-flex{
+    width: 15cm;
+    
+
+}
+
+.btn-light{
+    background: #5bb771;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-color: #000000;
+
+   
+}
+
+.btn-success{
+    margin-left: 45px;
+    border-color: #000000;
+}
+
+.nav-item{
+border-color: #000000;
+
+}
+
+.buscar{
+    width: 5000px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 2px #000000;
+    margin-right: 5px;
+
+}
+
+.fa-sharp{
+color: #000000;
+font-size: 40px;
+margin-right: 5px;
+margin-left: 5px;
+
+
+}
+.dropdown-toggle{
+    border-color: #000000;
+}
