@@ -5,13 +5,7 @@
     
 }
 
-.btn-primary {
-   
-    margin-left: 580px;
-    width: 100px;
 
-   
-}
 
 .d-flex{
     width: 15cm;
@@ -20,7 +14,7 @@
 }
 
 .btn-light{
-    background: #5bb771;
+    background: #ffffff;
     margin-right: 5px;
     margin-left: 5px;
     border-color: #000000;
@@ -33,10 +27,7 @@
     border-color: #000000;
 }
 
-.nav-item{
-border-color: #000000;
 
-}
 
 .buscar{
     width: 5000px;
@@ -52,9 +43,20 @@ color: #000000;
 font-size: 40px;
 margin-right: 5px;
 margin-left: 5px;
+pointer-events:painted;
 
 
 }
 .dropdown-toggle{
     border-color: #000000;
+}
+
+h1{
+   color: rgb(0, 0, 0);
+   width: 100px;
+}
+
+a{
+    
+    color: black;
 }
